@@ -36,21 +36,21 @@
              return rate = 1;
          }
      
-     let interest = (principal * rate * time) / 100;
-    
-     let interestData = arr.map (() => {
+     let interest = (item.principal * rate * item.time) / 100;
+
+ });
+      let interestData = arr.map ((e) => {
                     return {
-     					principal: item.principal,
-     					rate: rate,
-     					time: item.time,
-     					interest: interest
-     				}
-     			});
+                        principal: item.principal,
+                        rate: rate,
+                        time: item.time,
+                        interest: interest
+                    }
+                });
 
      console.log(interestData);
 
- 	  return interestData;
- });
+      return interestData;
 
  };
 
