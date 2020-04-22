@@ -2,34 +2,38 @@
  JavaScript Task 3
  *****************/
 	
-//Function yugiyo()
-	const yuGiYo = n => {
-	const word = [];
+//Function yugioh()
+	const yuGiOh = n => {
+	
+	const arr = [];
+	let word;
 
 	for (let i; i<=n; i++) {
 		if (i%2 === 0 && i%3 === 0 && i%5 === 0) {
-			word.push("yu-gi-yo");
+			return word = "yu-gi-oh";
 		} else if (i%2 === 0 && i%3 === 0) {
-				word.push("yu-gi");
+				return word="yu-gi";
 		} else if (i%2 === 0 && i%5 === 0) {
-				word.push("yu-yo");
+				return word="yu-oh";
 		} else if (i%3 === 0 && i%5 === 0) {
-				word.push("gi-yo");
+				return word="gi-oh";
 		} else if (i%2 === 0) {
-				word.push("yu");
+				return word="yu";
 		} else if (i%3 === 0) {
-				word.push("gi");
+				return word="gi";
 	    } else if (i%5 === 0) {
-				word.push("yo");
+				return word = "oh";
 	    } else {
-	    	word.push(i);
+	    	return word = i;
 	    }
+
+	    arr.push(word);
 	}
 
-	return word;
-	console.log(word);
+	return arr;
+	console.log(arr);
 }
 
 
-//call function yuGiyo()
-yuGiYo(100);
+//call function yuGiOh)
+yuGiOh(100);
