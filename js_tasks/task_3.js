@@ -29,9 +29,10 @@
 
 	    arr.push(word);
 	}
-
-	return arr;
+	
 	console.log(arr);
+	return arr;
+	
 }
 
 
