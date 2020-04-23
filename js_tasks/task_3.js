@@ -8,7 +8,7 @@
 	const arr = [];
 	let word;
 
-	for (let i; i<=n; i++) {
+	for (let i = 0; i<=n; i++) {
 		if (i%2 === 0 && i%3 === 0 && i%5 === 0) {
 			return word = "yu-gi-oh";
 		} else if (i%2 === 0 && i%3 === 0) {
